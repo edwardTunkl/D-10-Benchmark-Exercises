@@ -94,11 +94,27 @@ bigArray =[array1, array2, array3]
 
 //EX9
 
-ar1 = [2,4,6,8,6,5,4]
+ar1 = [2,4,6, 250000]
 ar2 = [2,4,6,8,6,5,4,7,5,4,3,3,]
 
 const longerArray = function (ar1, ar2) {
 return (ar1.length>ar2.length) ? ar1 : ar2
 }
 
-console.log(longerArray(ar1, ar2))
+// console.log(longerArray(ar1, ar2))
+
+//EX10 Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+const higherSum = function (ar1, ar2) {
+let sum1 = 0
+let sum2 = 0
+
+  for (let i=0; i<ar1.length; i++){
+    sum1 += ar1[i]
+  }
+  for (let i=0; i<ar2.length; i++){
+    sum2 += ar2[i]
+  }
+  return (sum1>sum2)? console.log(`${"ar1"} is bigger`) : console.log(`${"ar2"} is bigger`)
+}
+console.log(higherSum(ar1, ar2))
