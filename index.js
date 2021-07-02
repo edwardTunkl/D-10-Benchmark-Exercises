@@ -90,4 +90,15 @@ for (let i=0; i<10; i++) {
 
 bigArray =[array1, array2, array3]
 
-console.log(bigArray)
+// console.log(bigArray)
+
+//EX9
+
+ar1 = [2,4,6,8,6,5,4]
+ar2 = [2,4,6,8,6,5,4,7,5,4,3,3,]
+
+const longerArray = function (ar1, ar2) {
+return (ar1.length>ar2.length) ? ar1 : ar2
+}
+
+console.log(longerArray(ar1, ar2))
