@@ -1,6 +1,42 @@
+* {
+text-decoration: none;
+}
+
+body {
+max-width: 768px;
+margin: 0 auto;
+
+} 
+
 h1 {
   color: aqua;
+  text-align: center;
 }
-table, tr, td {
+
+a {
+color: blueviolet;
+background-color: blue;
+}
+
+table, tr, {
   border: 2px solid black;
+  border-radius: 5px;
+}
+td {
+  border: 3px solid;
+  border-color: green;
+}
+.orederedList {
+  border: 2px solid salmon;
+}
+p {
+margin: 50px 50px;  
+}
+
+.fSizeBoldness {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.hidden {
+  visibility: hidden;
 }
