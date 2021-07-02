@@ -28,4 +28,10 @@ let me = {
 
 //EX3
 delete me.email
-console.log(me)
+// console.log(me)
+
+//EX4
+let array = ["one", "two", "3","4","5","6","7","8","9","10"]
+console.log(array)
+
+//EX5
