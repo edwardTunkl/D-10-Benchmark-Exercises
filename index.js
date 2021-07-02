@@ -25,3 +25,7 @@ let me = {
 }
 
 // console.log(me)
+
+//EX3
+delete me.email
+console.log(me)
