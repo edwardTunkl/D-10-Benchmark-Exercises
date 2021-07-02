@@ -123,17 +123,69 @@
         38) Console log "Page loaded" when the page is correctly loaded
         39) Write a function to add new items to a UL
         40) Write a function to empty a list -->
-<script>
 
+<script lang="text/javascript">
+
+//EX31
 const elementWithId = document.getElementById("container") 
 
-const changeHeading = function (newText){
-let newH1 = document.querySelector("h1")
-newH1.innerText = "newText"
+//EX32
+const everyTd = document.querySelectorAll("td")
 
+//EX33 ??? no idea what you mean :) 
+// const everyTdText = everyTd.innerHTML
+
+//EX34
+const changeHeading = function (newText){
+    let newH1 = document.querySelector("h1")
+    newH1.innerText = newText
 }
 
+//EX35
+const extraRow = function (){
+    let myTable = document.querySelector("table")
+    let newRow = document.createElement("tr")
+    myTable.appendChild(newRow)
+}
 
+//EX36
+const addClass = function (){
+    let row = document.querySelectorAll("tr")
+    for(i=0; i<row.length; i++){
+        row[i].classList.add("test")
+    }
+}
+
+//EX37
+const redBackground = function (){
+let everyLink =document.querySelectorAll("a")
+    for (i=0;i<everyLink.length;i++){
+        everyLink[i].style.backgroundColor = "red"
+    }
+}
+
+//EX38
+window.addEventListener('load', (event) => {
+  console.log('Page loaded')
+})
+
+//EX39
+
+const newItems = function (newStuff) {
+    let unordered = document.querySelector("ul")
+    let newOne = document.createElement("li")
+    newOne.innerText = newStuff
+    unordered.appendChild(newOne)
+}
+
+//EX40 
+
+const emptyList = function () {
+    let selectedList = document.querySelectorAll("ul")
+    for (i=0; i<selectedList.length; i++){
+        selectedList[i].remove()
+    }
+}
 
 </script>
 </body>
