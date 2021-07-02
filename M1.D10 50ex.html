@@ -9,7 +9,6 @@
 </head>
 
     <!--
-
         HTML EXERCISES
 
         1) Create a title for the page
@@ -36,8 +35,6 @@
         19) Add a green border to each td
         20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
 
-        
-        
 
         EXTRA 
 
@@ -55,6 +52,7 @@
 
 <body>
     <h1>Heading of the Exercises</h1>
+    <input type="button" value="Hide Images" onclick="hideImageFunction()">
    <div>
         <ol class="orederedList">
         <li>this</li>
@@ -69,30 +67,30 @@
         <table>
             <tr>
                 <td >1</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>3</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>5</td>
             </tr>
             <tr>
                 <td colspan="2">1</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>3</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>5</td>
             </tr>
             <tr>
                 <td colspan="2">1</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>3</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>>
                 <td>5</td>
             </tr>      
             <tr>
                 <td colspan="2">1</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>3</td>
-                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px"></a></td>
+                <td><a href=""><img src="/Images/Img.jpeg" alt="lovely guitars" width="50px" class="showImage"></a></td>
                 <td>5</td>
             </tr>     
         </table>
@@ -123,70 +121,85 @@
         38) Console log "Page loaded" when the page is correctly loaded
         39) Write a function to add new items to a UL
         40) Write a function to empty a list -->
-
 <script lang="text/javascript">
-
-//EX31
-const elementWithId = document.getElementById("container") 
-
-//EX32
-const everyTd = document.querySelectorAll("td")
-
-//EX33 ??? no idea what you mean :) 
-// const everyTdText = everyTd.innerHTML
-
-//EX34
+      window.onload = function (){
+          
+         hideImageFunction()
+            
+       }
+            
+            
+            
+ //EX31
+ const elementWithId = document.getElementById("container") 
+            
+ //EX32
+ const everyTd = document.querySelectorAll("td")
+            
+ //EX33 ??? no idea what you mean :) 
+  // const everyTdText = everyTd.innerHTML
+            
+  //EX34
 const changeHeading = function (newText){
-    let newH1 = document.querySelector("h1")
-    newH1.innerText = newText
-}
-
-//EX35
+let newH1 = document.querySelector("h1")
+newH1.innerText = newText
+ }
+            
+ //EX35
 const extraRow = function (){
-    let myTable = document.querySelector("table")
-    let newRow = document.createElement("tr")
-    myTable.appendChild(newRow)
-}
-
-//EX36
-const addClass = function (){
-    let row = document.querySelectorAll("tr")
-    for(i=0; i<row.length; i++){
-        row[i].classList.add("test")
-    }
-}
-
+let myTable = document.querySelector("table")
+let newRow = document.createElement("tr")
+ myTable.appendChild(newRow)
+ }
+            
+ //EX36
+ const addClass = function (){
+ let row = document.querySelectorAll("tr")
+ for(let i=0; i<row.length; i++){
+  row[i].classList.add("test")
+  }
+ }
+            
 //EX37
 const redBackground = function (){
 let everyLink =document.querySelectorAll("a")
-    for (i=0;i<everyLink.length;i++){
-        everyLink[i].style.backgroundColor = "red"
-    }
-}
-
+ for (let i=0;i<everyLink.length;i++){
+ everyLink[i].style.backgroundColor = "red"
+ }
+ }
+            
 //EX38
 window.addEventListener('load', (event) => {
-  console.log('Page loaded')
-})
-
+ console.log('Page loaded')
+ })
+            
 //EX39
-
-const newItems = function (newStuff) {
-    let unordered = document.querySelector("ul")
-    let newOne = document.createElement("li")
-    newOne.innerText = newStuff
-    unordered.appendChild(newOne)
-}
-
-//EX40 
-
+            
+ const newItems = function (newStuff) {
+ let unordered = document.querySelector("ul")
+ let newOne = document.createElement("li")
+ newOne.innerText = newStuff
+ unordered.appendChild(newOne)
+  }
+            
+ //EX40 
+            
 const emptyList = function () {
-    let selectedList = document.querySelectorAll("ul")
-    for (i=0; i<selectedList.length; i++){
-        selectedList[i].remove()
-    }
+let selectedList = document.querySelectorAll("ul")
+for (let i=0; i<selectedList.length; i++){
+selectedList[i].remove()
+}
 }
 
+//Extra 2
+
+const hideImageFunction = function(){
+let imagesToHide = document.querySelectorAll("img")
+for(let i=0;i<imagesToHide.length;i++){
+ imagesToHide[i].classList.toggle("hideImage")
+}
+ }
+            
 </script>
 </body>
 </html>

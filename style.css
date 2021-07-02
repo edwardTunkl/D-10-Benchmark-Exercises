@@ -42,3 +42,10 @@ margin: 50px 50px;
 .hidden {
   visibility: hidden;
 }
+
+.showImage {
+  visibility: visible;
+}
+.hideImage {
+  visibility: hidden;
+}
