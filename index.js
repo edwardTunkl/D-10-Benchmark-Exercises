@@ -11,6 +11,17 @@
 //         29) Create a function that gets 2 arrays and returns the longest one
 //         30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 
+// EX1
 let x = "John"
 let y = "Doe"
 // console.log(x +" <> "+ y)
+
+//EX2
+
+let me = {
+  name:"Edward",
+  surname:"Tunkl",
+  email:"eddy@tunkl.de"
+}
+
+// console.log(me)
