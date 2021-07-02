@@ -31,11 +31,11 @@ delete me.email
 // console.log(me)
 
 //EX4
-let array = ["one", "two", "3","4","5","6","7","8","9","10"]
-// console.log(array)
+let firstArray = ["one", "two", "3","4","5","6","7","8","9","10"]
+// console.log(firstArray)
 
 //EX5
-// console.log(array)
+console.log(firstArray)
 
 //EX6
 
@@ -44,7 +44,7 @@ for (let i=0; i<100; i++) {
   let random = Math.floor(Math.random()*50)
   randomNumbers.push(random)
 }
-console.log(randomNumbers)
+// console.log(randomNumbers)
 
 //EX7
 
@@ -63,4 +63,31 @@ console.log(randomNumbers)
        minValue = randomNumbers[i]
   }
 
-console.log(maxValue, minValue)
+// console.log(maxValue, minValue)
+
+//EX8
+
+let bigArray = []
+let array1 = []
+let array2 = []
+let array3 = []
+
+for (let i=0; i<10; i++) {
+  let random = Math.floor(Math.random()*500)
+  array1.push(random)
+}
+for (let i=0; i<10; i++) {
+  let random = Math.floor(Math.random()*500)
+  array2.push(random)
+}
+for (let i=0; i<10; i++) {
+  let random = Math.floor(Math.random()*500)
+  array3.push(random)
+}
+// console.log(array1)
+// console.log(array2)
+// console.log(array3)
+
+bigArray =[array1, array2, array3]
+
+console.log(bigArray)
