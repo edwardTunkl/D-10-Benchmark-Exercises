@@ -45,3 +45,22 @@ for (let i=0; i<100; i++) {
   randomNumbers.push(random)
 }
 console.log(randomNumbers)
+
+//EX7
+
+   maxValue = [0]
+
+   for(i=0; i<randomNumbers.length; i++){
+
+    if (randomNumbers[i] > maxValue )
+       maxValue = randomNumbers[i]
+  }
+   minValue = [50]
+
+   for(i=0; i<randomNumbers.length; i++){
+
+    if (randomNumbers[i] < minValue )
+       minValue = randomNumbers[i]
+  }
+
+console.log(maxValue, minValue)
