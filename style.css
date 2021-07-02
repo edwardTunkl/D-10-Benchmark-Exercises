@@ -18,13 +18,15 @@ color: blueviolet;
 background-color: blue;
 }
 
-table, tr, {
-  border: 2px solid black;
+table {
+  border: 1px solid black;
   border-radius: 5px;
+
 }
+
 td {
-  border: 3px solid;
-  border-color: green;
+  border: 3px solid green;
+  
 }
 .orederedList {
   border: 2px solid salmon;
